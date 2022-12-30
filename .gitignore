@@ -1,3 +1,4 @@
+.idea
 elt-dbt/app.log
 elt-dbt/.idea
 elt-dbt/transformations/logs/
