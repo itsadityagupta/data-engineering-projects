@@ -1,0 +1,1 @@
+{"column_types": {"exchange_id": "number", "type": "category", "asset_class": "true_or_false", "locale": "true_or_false", "name": "text", "acronym": "true_or_false", "mic": "text", "operating_mic": "category", "participant_id": "text", "website_url": "category", "created_at": "true_or_false", "updated_at": "true_or_false"}}

@@ -1,0 +1,37 @@
+version: "3.7"
+
+services:
+  loading_data:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: loading_data
+    image: loading_data_image
+    restart: on-failure
+    network_mode: "host"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http:localhost:5432"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    depends_on:
+      - data_source
+
+  data_source:
+    image: postgres:13
+    restart: on-failure
+    container_name: data_source
+    environment:
+      POSTGRES_USER: "aditya"
+      POSTGRES_PASSWORD: "aditya1234"
+      POSTGRES_DB: "churn"
+    volumes:
+      - ./app/db_setup:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    network_mode: "host"
+
+#networks:
+#  deproject1_network:
+#    driver: bridge
+#    name: deproject1_network

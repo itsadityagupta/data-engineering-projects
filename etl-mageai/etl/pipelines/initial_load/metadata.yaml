@@ -1,0 +1,100 @@
+blocks:
+- all_upstream_blocks_executed: true
+  configuration: {}
+  downstream_blocks:
+  - drop_column_asset_class
+  language: python
+  name: load_tickertypes_api
+  status: executed
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_tickertypes_api
+- all_upstream_blocks_executed: true
+  configuration: {}
+  downstream_blocks:
+  - add_tickertypes_time_columns
+  language: python
+  name: drop_column_asset_class
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - load_tickertypes_api
+  uuid: drop_column_asset_class
+- all_upstream_blocks_executed: true
+  configuration: {}
+  downstream_blocks:
+  - tickertypes_to_postgres
+  language: python
+  name: add_tickertypes_time_columns
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - drop_column_asset_class
+  uuid: add_tickertypes_time_columns
+- all_upstream_blocks_executed: true
+  configuration: {}
+  downstream_blocks: []
+  language: python
+  name: tickertypes_to_postgres
+  status: executed
+  type: data_exporter
+  upstream_blocks:
+  - add_tickertypes_time_columns
+  uuid: tickertypes_to_postgres
+- all_upstream_blocks_executed: true
+  configuration: {}
+  downstream_blocks:
+  - rename_columns
+  language: python
+  name: load_exchanges_api
+  status: executed
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_exchanges_api
+- all_upstream_blocks_executed: true
+  configuration: {}
+  downstream_blocks:
+  - add_exchanges_time_columns
+  language: python
+  name: rename_columns
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - load_exchanges_api
+  uuid: rename_columns
+- all_upstream_blocks_executed: true
+  configuration: {}
+  downstream_blocks:
+  - rearrange_columns
+  language: python
+  name: add_exchanges_time_columns
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - rename_columns
+  uuid: add_exchanges_time_columns
+- all_upstream_blocks_executed: true
+  configuration: {}
+  downstream_blocks:
+  - exchanges_to_postgres
+  language: python
+  name: rearrange_columns
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - add_exchanges_time_columns
+  uuid: rearrange_columns
+- all_upstream_blocks_executed: true
+  configuration: {}
+  downstream_blocks: []
+  language: python
+  name: exchanges_to_postgres
+  status: executed
+  type: data_exporter
+  upstream_blocks:
+  - rearrange_columns
+  uuid: exchanges_to_postgres
+name: initial_load
+type: python
+uuid: initial_load
+widgets: []
