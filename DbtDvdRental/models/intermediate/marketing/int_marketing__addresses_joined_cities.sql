@@ -12,6 +12,7 @@ select
 a.address_id,
 a.address,
 a.address2,
+a.district,
 c.city,
 c.country_id,
 a.postal_code,

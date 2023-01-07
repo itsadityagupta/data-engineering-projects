@@ -22,6 +22,11 @@ models:
         meta:
           contains_pii: true
 
+      - name: district
+        description: ""
+        meta:
+          contains_pii: true
+
       - name: city
         description: ""
         meta:

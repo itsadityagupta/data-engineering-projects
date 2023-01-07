@@ -19,6 +19,11 @@ models:
         meta:
           contains_pii: true
 
+      - name: district
+        description: ""
+        meta:
+          contains_pii: true
+
       - name: city
         description: ""
         meta:
@@ -44,6 +49,11 @@ models:
           contains_pii: true
 
       - name: address2
+        description: ""
+        meta:
+          contains_pii: true
+
+      - name: district
         description: ""
         meta:
           contains_pii: true
