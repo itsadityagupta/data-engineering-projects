@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: int_demographics__addresses_joined_cities
+  - name: int_marketing__addresses_joined_cities
     description: ""
     columns:
       - name: address_id
@@ -22,7 +22,7 @@ models:
       - name: last_updated
         description: ""
 
-  - name: int_demographics__addresses_joined_countries
+  - name: int_marketing__addresses_joined_countries
     description: ""
     columns:
       - name: address_id
