@@ -41,5 +41,15 @@ models:
       +schema: staging
       +materialized: view
     marts:
-      +schema: marts
-      +materialized: table
+      films:
+        +schema: films
+        +materialized: table
+      finance:
+        +schema: finance
+        +materialized: table
+      marketing:
+        +schema: marketing
+        +materialized: table
+      stores:
+        +schema: stores
+        +materialized: table
