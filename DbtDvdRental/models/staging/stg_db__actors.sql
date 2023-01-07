@@ -8,8 +8,7 @@ renamed as (
 
     select
         actor_id,
-        first_name,
-        last_name,
+        concat(first_name, ' ', last_name) as name,
         last_update as last_updated
 
     from source
