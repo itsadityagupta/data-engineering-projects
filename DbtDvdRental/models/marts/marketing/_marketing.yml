@@ -60,3 +60,33 @@ models:
 
       - name: last_updated
         description: ""
+
+  - name: customers
+    description: ""
+    columns:
+      - name: customer_id
+        description: ""
+
+      - name: store_id
+        description: ""
+
+      - name: name
+        description: ""
+
+      - name: email
+        description: ""
+
+      - name: address_id
+        description: ""
+
+      - name: activebool
+        description: ""
+
+      - name: create_date
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+      - name: active
+        description: ""
