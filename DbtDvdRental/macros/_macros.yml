@@ -1,0 +1,10 @@
+version: 2
+
+macros:
+  - name: generate_schema_name
+    description: A macro to generate a schema name equal to the custom schema name rather than the default [target_name]_[custom_name].
+    arguments:
+      - name: custom_schema_name
+        description: The configured value of schema in the specified node, or none if a value is not supplied.
+      - name: node
+        description: The node that is currently being processed by dbt.

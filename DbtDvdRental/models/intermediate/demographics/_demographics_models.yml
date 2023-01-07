@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: int_demographics__addresses_joined_cities
+    description: ""
+    columns:
+      - name: address_id
+        description: ""
+
+      - name: address
+        description: ""
+
+      - name: address2
+        description: ""
+
+      - name: city
+        description: ""
+
+      - name: country_id
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: int_demographics__addresses_joined_countries
+    description: ""
+    columns:
+      - name: address_id
+        description: ""
+
+      - name: address
+        description: ""
+
+      - name: address2
+        description: ""
+
+      - name: city
+        description: ""
+
+      - name: country
+        description: ""
+
+      - name: last_updated
+        description: ""

@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: films
+    description: ""
+    columns:
+      - name: film_id
+        description: ""
+
+      - name: title
+        description: ""
+
+      - name: description
+        description: ""
+
+      - name: release_year
+        description: ""
+
+      - name: language
+        description: ""
+
+      - name: category
+        description: ""
+
+      - name: actor_name
+        description: ""
+
+      - name: rental_duration
+        description: ""
+
+      - name: rental_rate
+        description: ""
+
+      - name: length
+        description: ""
+
+      - name: replacement_cost
+        description: ""
+
+      - name: rating
+        description: ""
+
+      - name: special_features
+        description: ""
+
+      - name: fulltext
+        description: ""
+
+      - name: last_updated
+        description: ""

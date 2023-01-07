@@ -1,0 +1,276 @@
+version: 2
+
+sources:
+  - name: dvdrental
+    schema: public
+    description: A replica of the dvdrental database in PostgreSQL.
+    tables:
+      - name: actors
+        identifier: actor
+        columns:
+          - name: actor_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: first_name
+            description: ""
+          - name: last_name
+            description: ""
+          - name: last_update
+            description: ""
+
+      - name: addresses
+        identifier: address
+        columns:
+          - name: address_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: address
+            description: ""
+          - name: address2
+            description: ""
+          - name: city_id
+            description: ""
+          - name: postal_code
+            description: ""
+          - name: phone
+            description: ""
+          - name: last_update
+            description: ""
+
+      - name: categories
+        identifier: category
+        columns:
+          - name: category_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: ""
+          - name: last_update
+            description: ""
+
+      - name: cities
+        identifier: city
+        columns:
+          - name: city_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: city
+            description: ""
+          - name: country_id
+            description: ""
+          - name: last_update
+            description: ""
+
+      - name: countries
+        identifier: country
+        columns:
+          - name: country_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: country
+            description: ""
+          - name: last_update
+            description: ""
+
+      - name: customers
+        identifier: customer
+        columns:
+          - name: customer_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: store_id
+            description: ""
+          - name: first_name
+            description: ""
+          - name: last_name
+            description: ""
+          - name: email
+            description: ""
+          - name: address_id
+            description: ""
+          - name: activebool
+            description: ""
+          - name: create_date
+            description: ""
+          - name: last_update
+            description: ""
+          - name: active
+            description: ""
+
+      - name: films
+        identifier: film
+        columns:
+          - name: film_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: title
+            description: ""
+          - name: description
+            description: ""
+          - name: release_year
+            description: ""
+          - name: language_id
+            description: ""
+          - name: rental_duration
+            description: ""
+          - name: rental_rate
+            description: ""
+          - name: length
+            description: ""
+          - name: replacement_cost
+            description: ""
+          - name: rating
+            description: ""
+          - name: last_update
+            description: ""
+          - name: special_features
+            description: ""
+          - name: fulltext
+            description: ""
+
+      - name: film_actors
+        identifier: film_actor
+        columns:
+          - name: actor_id
+            description: ""
+          - name: film_id
+            description: ""
+          - name: last_update
+            description: ""
+
+      - name: film_categories
+        identifier: film_category
+        columns:
+          - name: film_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: category_id
+            description: ""
+          - name: last_update
+            description: ""
+
+      - name: inventory
+        columns:
+          - name: inventory_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: film_id
+            description: ""
+          - name: store_id
+            description: ""
+          - name: last_update
+            description: ""
+
+      - name: languages
+        identifier: language
+        columns:
+          - name: language_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: ""
+          - name: last_update
+            description: ""
+
+      - name: payments
+        identifier: payment
+        columns:
+          - name: payment_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: customer_id
+            description: ""
+          - name: staff_id
+            description: ""
+          - name: rental_id
+            description: ""
+          - name: amount
+            description: ""
+          - name: payment_date
+            description: ""
+
+      - name: rentals
+        identifier: rental
+        columns:
+          - name: rental_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: rental_date
+            description: ""
+          - name: inventory_id
+            description: ""
+          - name: customer_id
+            description: ""
+          - name: return_date
+            description: ""
+          - name: staff_id
+            description: ""
+          - name: last_update
+            description: ""
+
+      - name: staff
+        columns:
+          - name: staff_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: first_name
+            description: ""
+          - name: last_name
+            description: ""
+          - name: address_id
+            description: ""
+          - name: email
+            description: ""
+          - name: store_id
+            description: ""
+          - name: active
+            description: ""
+          - name: username
+            description: ""
+          - name: password
+            description: ""
+          - name: last_update
+            description: ""
+          - name: picture
+            description: ""
+
+      - name: stores
+        identifier: store
+        columns:
+          - name: store_id
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: manager_staff_id
+            description: ""
+          - name: address_id
+            description: ""
+          - name: last_updated
+            description: ""

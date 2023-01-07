@@ -28,3 +28,6 @@ map-reduce-examples/data/ml-100k/ua.test
 map-reduce-examples/data/ml-100k/ub.base
 map-reduce-examples/data/ml-100k/ub.test
 map-reduce-examples/.idea
+DbtDvdRental/target/
+DbtDvdRental/dbt_packages/
+DbtDvdRental/logs/
