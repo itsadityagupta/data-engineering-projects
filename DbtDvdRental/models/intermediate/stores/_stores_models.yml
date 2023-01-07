@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: int_stores__stores_joined_staff
+    description: ""
+    columns:
+      - name: store_id
+        description: ""
+
+      - name: manager_staff_id
+        description: ""
+
+      - name: manager_name
+        description: ""
+
+      - name: manager_address_id
+        description: ""
+
+      - name: manager_email
+        description: ""
+
+      - name: manager_store_id
+        description: ""
+
+      - name: store_address_id
+        description: ""
+
+      - name: manager_last_updated
+        description: ""
+
+      - name: last_updated
+        description: ""
