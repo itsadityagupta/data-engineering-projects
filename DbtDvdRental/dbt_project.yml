@@ -37,19 +37,46 @@ models:
     staging:
       +schema: staging
       +materialized: view
+      +tags:
+        - "staging"
+        - "sources"
     intermediate:
       +schema: staging
       +materialized: view
+      +tags:
+        - "intermediate"
+      films:
+        +tags:
+          - "films"
+      finance:
+        +tags:
+          - "finance"
+      marketing:
+        +tags:
+          - "marketing"
+      stores:
+        +tags:
+          - "stores"
     marts:
+      +tags:
+        - "marts"
       films:
         +schema: films
         +materialized: table
+        +tags:
+          - "films"
       finance:
         +schema: finance
         +materialized: table
+        +tags:
+          - "finance"
       marketing:
         +schema: marketing
         +materialized: table
+        +tags:
+          - "finance"
       stores:
         +schema: stores
         +materialized: table
+        +tags:
+          - "stores"
