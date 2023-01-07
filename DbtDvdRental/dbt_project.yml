@@ -39,7 +39,6 @@ models:
       +materialized: view
       +tags:
         - "staging"
-        - "sources"
     intermediate:
       +schema: staging
       +materialized: view
