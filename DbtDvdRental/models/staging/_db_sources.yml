@@ -274,3 +274,310 @@ sources:
             description: ""
           - name: last_updated
             description: ""
+
+models:
+  - name: stg_db__actors
+    description: ""
+    config:
+      tags: [ 'films' ]
+    columns:
+      - name: actor_id
+        description: ""
+
+      - name: name
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: stg_db__addresses
+    description: ""
+    columns:
+      - name: address_id
+        description: ""
+
+      - name: address
+        description: ""
+
+      - name: address2
+        description: ""
+
+      - name: district
+        description: ""
+
+      - name: city_id
+        description: ""
+
+      - name: postal_code
+        description: ""
+
+      - name: phone
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: stg_db__categories
+    description: ""
+    config:
+      tags: [ 'films' ]
+    columns:
+      - name: category_id
+        description: ""
+
+      - name: name
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: stg_db__cities
+    description: ""
+    columns:
+      - name: city_id
+        description: ""
+
+      - name: city
+        description: ""
+
+      - name: country_id
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: stg_db__countries
+    description: ""
+    columns:
+      - name: country_id
+        description: ""
+
+      - name: country
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: stg_db__customers
+    description: ""
+    columns:
+      - name: customer_id
+        description: ""
+
+      - name: store_id
+        description: ""
+
+      - name: name
+        description: ""
+
+      - name: email
+        description: ""
+
+      - name: address_id
+        description: ""
+
+      - name: activebool
+        description: ""
+
+      - name: create_date
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+      - name: active
+        description: ""
+
+  - name: stg_db__film_actors
+    description: ""
+    config:
+      tags: [ 'films' ]
+    columns:
+      - name: actor_id
+        description: ""
+
+      - name: film_id
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: stg_db__film_categories
+    description: ""
+    config:
+      tags: [ 'films' ]
+    columns:
+      - name: film_id
+        description: ""
+
+      - name: category_id
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: stg_db__films
+    description: ""
+    config:
+      tags: [ 'films' ]
+    columns:
+      - name: film_id
+        description: ""
+
+      - name: title
+        description: ""
+
+      - name: description
+        description: ""
+
+      - name: release_year
+        description: ""
+
+      - name: language_id
+        description: ""
+
+      - name: rental_duration
+        description: ""
+
+      - name: rental_rate
+        description: ""
+
+      - name: length
+        description: ""
+
+      - name: replacement_cost
+        description: ""
+
+      - name: rating
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+      - name: special_features
+        description: ""
+
+      - name: fulltext
+        description: ""
+
+  - name: stg_db__inventory
+    description: ""
+    columns:
+      - name: inventory_id
+        description: ""
+
+      - name: film_id
+        description: ""
+
+      - name: store_id
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: stg_db__languages
+    description: ""
+    config:
+      tags: [ 'films' ]
+    columns:
+      - name: language_id
+        description: ""
+
+      - name: name
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: stg_db__payments
+    description: ""
+    columns:
+      - name: payment_id
+        description: ""
+
+      - name: customer_id
+        description: ""
+
+      - name: staff_id
+        description: ""
+
+      - name: rental_id
+        description: ""
+
+      - name: amount
+        description: ""
+
+      - name: payment_date
+        description: ""
+
+  - name: stg_db__rentals
+    description: ""
+    columns:
+      - name: rental_id
+        description: ""
+
+      - name: rental_date
+        description: ""
+
+      - name: inventory_id
+        description: ""
+
+      - name: customer_id
+        description: ""
+
+      - name: return_date
+        description: ""
+
+      - name: staff_id
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: stg_db__staff
+    description: ""
+    columns:
+      - name: staff_id
+        description: ""
+
+      - name: name
+        description: ""
+
+      - name: address_id
+        description: ""
+
+      - name: email
+        description: ""
+
+      - name: store_id
+        description: ""
+
+      - name: active
+        description: ""
+
+      - name: username
+        description: ""
+
+      - name: password
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+      - name: picture
+        description: ""
+
+  - name: stg_db__stores
+    description: ""
+    columns:
+      - name: store_id
+        description: ""
+
+      - name: manager_staff_id
+        description: ""
+
+      - name: address_id
+        description: ""
+
+      - name: last_updated
+        description: ""
