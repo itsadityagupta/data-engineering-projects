@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: int_finance__rentals_joined_inventory
+    description: ""
+    columns:
+      - name: rental_id
+        description: ""
+
+      - name: rental_date
+        description: ""
+
+      - name: film_id
+        description: ""
+
+      - name: store_id
+        description: ""
+
+      - name: customer_id
+        description: ""
+
+      - name: return_date
+        description: ""
+
+      - name: staff_id
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+  - name: int_finance__payments_joined_rentals
+    description: ""
+    columns:
+      - name: payment_id
+        description: ""
+
+      - name: payment_customer_id
+        description: ""
+
+      - name: payment_staff_id
+        description: ""
+
+      - name: rental_date
+        description: ""
+
+      - name: film_id
+        description: ""
+
+      - name: store_id
+        description: ""
+
+      - name: rental_customer_id
+        description: ""
+
+      - name: return_date
+        description: ""
+
+      - name: rental_staff_id
+        description: ""
+
+      - name: amount
+        description: ""
+
+      - name: payment_date
+        description: ""

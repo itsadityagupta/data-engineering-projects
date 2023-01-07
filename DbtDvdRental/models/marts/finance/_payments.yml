@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: payments
+    description: ""
+    columns:
+      - name: payment_id
+        description: ""
+
+      - name: payment_customer_id
+        description: ""
+
+      - name: payment_staff_id
+        description: ""
+
+      - name: rental_date
+        description: ""
+
+      - name: film_id
+        description: ""
+
+      - name: store_id
+        description: ""
+
+      - name: rental_customer_id
+        description: ""
+
+      - name: return_date
+        description: ""
+
+      - name: rental_staff_id
+        description: ""
+
+      - name: amount
+        description: ""
+
+      - name: payment_date
+        description: ""
