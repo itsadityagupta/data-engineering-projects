@@ -8,8 +8,7 @@ renamed as (
 
     select
         staff_id,
-        first_name,
-        last_name,
+        concat(first_name, ' ', last_name) as name,
         address_id,
         email,
         store_id,

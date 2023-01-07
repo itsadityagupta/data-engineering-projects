@@ -9,8 +9,7 @@ renamed as (
     select
         customer_id,
         store_id,
-        first_name,
-        last_name,
+        concat(first_name, ' ', last_name) as name,
         email,
         address_id,
         activebool,
