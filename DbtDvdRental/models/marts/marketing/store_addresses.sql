@@ -1,6 +1,6 @@
 with addresses as (
 
-    select * from {{ ref('int_demographics__addresses_joined_countries') }}
+    select * from {{ ref('int_marketing__addresses_joined_countries') }}
 
 ),
 stores as (
