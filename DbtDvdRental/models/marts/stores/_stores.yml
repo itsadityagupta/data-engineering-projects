@@ -30,3 +30,33 @@ models:
 
       - name: last_updated
         description: ""
+
+  - name: store_addresses
+    description: ""
+    columns:
+      - name: address_id
+        description: ""
+        tests:
+          - unique
+          - not_null
+
+      - name: address
+        description: ""
+
+      - name: address2
+        description: ""
+
+      - name: city
+        description: ""
+
+      - name: country
+        description: ""
+
+      - name: postal_code
+        description: ""
+
+      - name: phone
+        description: ""
+
+      - name: last_updated
+        description: ""
