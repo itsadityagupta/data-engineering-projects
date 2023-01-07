@@ -3,6 +3,8 @@ version: 2
 models:
   - name: customer_addresses
     description: ""
+    meta:
+      contains_pii: true
     columns:
       - name: address_id
         description: ""
@@ -12,27 +14,41 @@ models:
 
       - name: address
         description: ""
+        meta:
+          contains_pii: true
 
       - name: address2
         description: ""
+        meta:
+          contains_pii: true
 
       - name: city
         description: ""
+        meta:
+          contains_pii: true
 
       - name: country
         description: ""
+        meta:
+          contains_pii: true
 
       - name: postal_code
         description: ""
+        meta:
+          contains_pii: true
 
       - name: phone
         description: ""
+        meta:
+          contains_pii: true
 
       - name: last_updated
         description: ""
 
   - name: customers
     description: ""
+    meta:
+      contains_pii: true
     columns:
       - name: customer_id
         description: ""
@@ -42,9 +58,13 @@ models:
 
       - name: name
         description: ""
+        meta:
+          contains_pii: true
 
       - name: email
         description: ""
+        meta:
+          contains_pii: true
 
       - name: address_id
         description: ""

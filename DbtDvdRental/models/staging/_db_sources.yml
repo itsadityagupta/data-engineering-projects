@@ -7,6 +7,8 @@ sources:
     tables:
       - name: actors
         identifier: actor
+        meta:
+          contains_pii: true
         columns:
           - name: actor_id
             description: ""
@@ -15,13 +17,19 @@ sources:
               - not_null
           - name: first_name
             description: ""
+            meta:
+              contains_pii: true
           - name: last_name
             description: ""
+            meta:
+              contains_pii: true
           - name: last_update
             description: ""
 
       - name: addresses
         identifier: address
+        meta:
+          contains_pii: true
         columns:
           - name: address_id
             description: ""
@@ -30,14 +38,26 @@ sources:
               - not_null
           - name: address
             description: ""
+            meta:
+              contains_pii: true
           - name: address2
             description: ""
+            meta:
+              contains_pii: true
+          - name: district
+            description: ""
+            meta:
+              contains_pii: true
           - name: city_id
             description: ""
           - name: postal_code
             description: ""
+            meta:
+              contains_pii: true
           - name: phone
             description: ""
+            meta:
+              contains_pii: true
           - name: last_update
             description: ""
 
@@ -84,6 +104,8 @@ sources:
 
       - name: customers
         identifier: customer
+        meta:
+          contains_pii: true
         columns:
           - name: customer_id
             description: ""
@@ -94,10 +116,16 @@ sources:
             description: ""
           - name: first_name
             description: ""
+            meta:
+              contains_pii: true
           - name: last_name
             description: ""
+            meta:
+              contains_pii: true
           - name: email
             description: ""
+            meta:
+              contains_pii: true
           - name: address_id
             description: ""
           - name: activebool
@@ -233,6 +261,8 @@ sources:
             description: ""
 
       - name: staff
+        meta:
+          contains_pii: true
         columns:
           - name: staff_id
             description: ""
@@ -241,8 +271,12 @@ sources:
               - not_null
           - name: first_name
             description: ""
+            meta:
+              contains_pii: true
           - name: last_name
             description: ""
+            meta:
+              contains_pii: true
           - name: address_id
             description: ""
           - name: email
@@ -278,6 +312,8 @@ sources:
 models:
   - name: stg_db__actors
     description: ""
+    meta:
+      contains_pii: true
     config:
       tags: [ 'films' ]
     columns:
@@ -286,33 +322,47 @@ models:
 
       - name: name
         description: ""
+        meta:
+          contains_pii: true
 
       - name: last_updated
         description: ""
 
   - name: stg_db__addresses
     description: ""
+    meta:
+      contains_pii: true
     columns:
       - name: address_id
         description: ""
 
       - name: address
         description: ""
+        meta:
+          contains_pii: true
 
       - name: address2
         description: ""
+        meta:
+          contains_pii: true
 
       - name: district
         description: ""
+        meta:
+          contains_pii: true
 
       - name: city_id
         description: ""
 
       - name: postal_code
         description: ""
+        meta:
+          contains_pii: true
 
       - name: phone
         description: ""
+        meta:
+          contains_pii: true
 
       - name: last_updated
         description: ""
@@ -360,6 +410,8 @@ models:
 
   - name: stg_db__customers
     description: ""
+    meta:
+      contains_pii: true
     columns:
       - name: customer_id
         description: ""
@@ -369,9 +421,13 @@ models:
 
       - name: name
         description: ""
+        meta:
+          contains_pii: true
 
       - name: email
         description: ""
+        meta:
+          contains_pii: true
 
       - name: address_id
         description: ""
@@ -536,18 +592,24 @@ models:
 
   - name: stg_db__staff
     description: ""
+    meta:
+      contains_pii: true
     columns:
       - name: staff_id
         description: ""
 
       - name: name
         description: ""
+        meta:
+          contains_pii: true
 
       - name: address_id
         description: ""
 
       - name: email
         description: ""
+        meta:
+          contains_pii: true
 
       - name: store_id
         description: ""

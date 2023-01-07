@@ -3,18 +3,26 @@ version: 2
 models:
   - name: int_marketing__addresses_joined_cities
     description: ""
+    meta:
+      contains_pii: true
     columns:
       - name: address_id
         description: ""
 
       - name: address
         description: ""
+        meta:
+          contains_pii: true
 
       - name: address2
         description: ""
+        meta:
+          contains_pii: true
 
       - name: city
         description: ""
+        meta:
+          contains_pii: true
 
       - name: country_id
         description: ""
@@ -24,21 +32,31 @@ models:
 
   - name: int_marketing__addresses_joined_countries
     description: ""
+    meta:
+      contains_pii: true
     columns:
       - name: address_id
         description: ""
 
       - name: address
         description: ""
+        meta:
+          contains_pii: true
 
       - name: address2
         description: ""
+        meta:
+          contains_pii: true
 
       - name: city
         description: ""
+        meta:
+          contains_pii: true
 
       - name: country
         description: ""
+        meta:
+          contains_pii: true
 
       - name: last_updated
         description: ""

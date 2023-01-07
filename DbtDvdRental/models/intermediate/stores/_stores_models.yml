@@ -3,21 +3,29 @@ version: 2
 models:
   - name: int_stores__stores_joined_staff
     description: ""
+    meta:
+      contains_pii: true
     columns:
       - name: store_id
         description: ""
 
       - name: manager_staff_id
         description: ""
+        meta:
+          contains_pii: true
 
       - name: manager_name
         description: ""
+        meta:
+          contains_pii: true
 
       - name: manager_address_id
         description: ""
 
       - name: manager_email
         description: ""
+        meta:
+          contains_pii: true
 
       - name: manager_store_id
         description: ""
