@@ -73,7 +73,7 @@ models:
         +schema: marketing
         +materialized: table
         +tags:
-          - "finance"
+          - "marketing"
       stores:
         +schema: stores
         +materialized: table
