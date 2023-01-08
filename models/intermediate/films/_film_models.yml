@@ -3,8 +3,6 @@ version: 2
 models:
   - name: int_films__joined_language
     description: ""
-    config:
-      tags: ['films']
     columns:
       - name: film_id
         description: ""
@@ -47,8 +45,6 @@ models:
 
   - name: int_films__joined_category
     description: ""
-    config:
-      tags: [ 'films' ]
     columns:
       - name: film_id
         description: ""
@@ -94,8 +90,6 @@ models:
 
   - name: int_films__joined_actor
     description: ""
-    config:
-      tags: [ 'films' ]
     columns:
       - name: film_id
         description: ""

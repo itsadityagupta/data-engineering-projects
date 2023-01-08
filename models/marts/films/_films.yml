@@ -3,8 +3,6 @@ version: 2
 models:
   - name: films
     description: ""
-    config:
-      tags: [ 'films' ]
     columns:
       - name: film_id
         description: ""
