@@ -330,8 +330,8 @@ models:
 
   - name: stg_db__addresses
     description: ""
-    tags:
-      - "marketing"
+    config:
+      tags: [ "marketing", "stores" ]
     meta:
       contains_pii: true
     columns:
@@ -386,7 +386,7 @@ models:
   - name: stg_db__cities
     description: ""
     config:
-      tags: [ "marketing" ]
+      tags: [ "marketing", "stores" ]
     columns:
       - name: city_id
         description: ""
@@ -403,7 +403,7 @@ models:
   - name: stg_db__countries
     description: ""
     config:
-      tags: [ "marketing" ]
+      tags: [ "marketing", "stores" ]
     columns:
       - name: country_id
         description: ""
@@ -606,6 +606,8 @@ models:
 
   - name: stg_db__staff
     description: ""
+    config:
+      tags: [ "stores" ]
     meta:
       contains_pii: true
     columns:
@@ -646,7 +648,7 @@ models:
   - name: stg_db__stores
     description: ""
     config:
-      tags: [ "marketing" ]
+      tags: [ "marketing", "stores" ]
     columns:
       - name: store_id
         description: ""

@@ -3,6 +3,8 @@ version: 2
 models:
   - name: int_marketing__addresses_joined_cities
     description: ""
+    config:
+      tags: [ "stores" ]
     meta:
       contains_pii: true
     columns:
@@ -37,6 +39,8 @@ models:
 
   - name: int_marketing__addresses_joined_countries
     description: ""
+    config:
+      tags: [ "stores" ]
     meta:
       contains_pii: true
     columns:
