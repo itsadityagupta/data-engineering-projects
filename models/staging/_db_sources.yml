@@ -526,6 +526,8 @@ models:
 
   - name: stg_db__inventory
     description: ""
+    config:
+      tags: [ "finance" ]
     columns:
       - name: inventory_id
         description: ""
@@ -555,6 +557,8 @@ models:
 
   - name: stg_db__payments
     description: ""
+    config:
+      tags: [ "finance" ]
     columns:
       - name: payment_id
         description: ""
@@ -576,6 +580,8 @@ models:
 
   - name: stg_db__rentals
     description: ""
+    config:
+      tags: [ "finance" ]
     columns:
       - name: rental_id
         description: ""
