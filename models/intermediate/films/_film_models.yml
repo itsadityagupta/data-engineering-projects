@@ -6,6 +6,9 @@ models:
     columns:
       - name: film_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: title
         description: ""
@@ -48,6 +51,9 @@ models:
     columns:
       - name: film_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: title
         description: ""
@@ -93,6 +99,9 @@ models:
     columns:
       - name: film_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: title
         description: ""
@@ -134,4 +143,16 @@ models:
         description: ""
 
       - name: last_updated
+        description: ""
+
+  - name: int_films__actor_joined_film_actors
+    description: ""
+    columns:
+      - name: film_id
+        description: ""
+        tests:
+          - unique
+          - not_null
+
+      - name: actor_names
         description: ""
