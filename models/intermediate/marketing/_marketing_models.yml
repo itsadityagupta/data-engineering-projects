@@ -36,6 +36,10 @@ models:
 
       - name: country_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__countries')
+              field: country_id
 
       - name: last_updated
         description: ""

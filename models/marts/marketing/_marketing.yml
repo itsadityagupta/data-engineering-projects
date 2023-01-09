@@ -63,6 +63,10 @@ models:
 
       - name: store_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__stores')
+              field: store_id
 
       - name: name
         description: ""
@@ -76,6 +80,10 @@ models:
 
       - name: address_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__addresses')
+              field: address_id
 
       - name: activebool
         description: ""
