@@ -15,18 +15,34 @@ models:
 
       - name: film_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__films')
+              field: film_id
 
       - name: store_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__stores')
+              field: store_id
 
       - name: customer_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__customers')
+              field: customer_id
 
       - name: return_date
         description: ""
 
       - name: staff_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__staff')
+              field: staff_id
 
       - name: last_updated
         description: ""
@@ -42,27 +58,51 @@ models:
 
       - name: payment_customer_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__customers')
+              field: customer_id
 
       - name: payment_staff_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__staff')
+              field: staff_id
 
       - name: rental_date
         description: ""
 
       - name: film_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__films')
+              field: film_id
 
       - name: store_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__stores')
+              field: store_id
 
       - name: rental_customer_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__customers')
+              field: customer_id
 
       - name: return_date
         description: ""
 
       - name: rental_staff_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__staff')
+              field: staff_id
 
       - name: amount
         description: ""
