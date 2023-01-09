@@ -5,6 +5,9 @@ models:
     description: ""
     meta:
       contains_pii: true
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "manager_store_id = store_id"
     columns:
       - name: store_id
         description: ""
