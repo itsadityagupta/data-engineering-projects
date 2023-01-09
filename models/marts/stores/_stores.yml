@@ -12,12 +12,20 @@ models:
 
       - name: manager_staff_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__staff')
+              field: staff_id
 
       - name: manager_name
         description: ""
 
       - name: manager_address_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__addresses')
+              field: address_id
 
       - name: manager_email
         description: ""
@@ -27,6 +35,10 @@ models:
 
       - name: store_address_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__addresses')
+              field: address_id
 
       - name: manager_last_updated
         description: ""
@@ -82,6 +94,10 @@ models:
 
       - name: address_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__addresses')
+              field: address_id
 
       - name: email
         description: ""
@@ -90,6 +106,10 @@ models:
 
       - name: store_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__stores')
+              field: store_id
 
       - name: active
         description: ""

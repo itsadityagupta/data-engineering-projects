@@ -8,11 +8,18 @@ models:
     columns:
       - name: store_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: manager_staff_id
         description: ""
         meta:
           contains_pii: true
+        tests:
+          - relationships:
+              to: ref('stg_db__staff')
+              field: staff_id
 
       - name: manager_name
         description: ""
@@ -21,6 +28,10 @@ models:
 
       - name: manager_address_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__addresses')
+              field: address_id
 
       - name: manager_email
         description: ""
@@ -29,9 +40,17 @@ models:
 
       - name: manager_store_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__stores')
+              field: store_id
 
       - name: store_address_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__addresses')
+              field: address_id
 
       - name: manager_last_updated
         description: ""
