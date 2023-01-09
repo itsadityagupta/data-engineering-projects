@@ -364,6 +364,10 @@ models:
 
       - name: city_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__cities')
+              field: city_id
 
       - name: postal_code
         description: ""
@@ -411,6 +415,10 @@ models:
 
       - name: country_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__countries')
+              field: country_id
 
       - name: last_updated
         description: ""
@@ -460,6 +468,10 @@ models:
 
       - name: address_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__addresses')
+              field: address_id
 
       - name: activebool
         description: ""
@@ -480,9 +492,17 @@ models:
     columns:
       - name: actor_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__actors')
+              field: actor_id
 
       - name: film_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__films')
+              field: film_id
 
       - name: last_updated
         description: ""
@@ -497,9 +517,16 @@ models:
         tests:
           - unique
           - not_null
+          - relationships:
+              to: ref('stg_db__films')
+              field: film_id
 
       - name: category_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__categories')
+              field: category_id
 
       - name: last_updated
         description: ""
@@ -526,6 +553,10 @@ models:
 
       - name: language_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__languages')
+              field: language_id
 
       - name: rental_duration
         description: ""
@@ -567,9 +598,17 @@ models:
 
       - name: film_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__films')
+              field: film_id
 
       - name: store_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__stores')
+              field: store_id
 
       - name: last_updated
         description: ""
@@ -604,12 +643,24 @@ models:
 
       - name: customer_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__customers')
+              field: customer_id
 
       - name: staff_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__staff')
+              field: staff_id
 
       - name: rental_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__rentals')
+              field: rental_id
 
       - name: amount
         description: ""
@@ -633,15 +684,27 @@ models:
 
       - name: inventory_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__inventory')
+              field: inventory_id
 
       - name: customer_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__customers')
+              field: customer_id
 
       - name: return_date
         description: ""
 
       - name: staff_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__staff')
+              field: staff_id
 
       - name: last_updated
         description: ""
@@ -666,6 +729,10 @@ models:
 
       - name: address_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__addresses')
+              field: address_id
 
       - name: email
         description: ""
@@ -674,6 +741,10 @@ models:
 
       - name: store_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__stores')
+              field: store_id
 
       - name: active
         description: ""
@@ -703,9 +774,17 @@ models:
 
       - name: manager_staff_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__staff')
+              field: staff_id
 
       - name: address_id
         description: ""
+        tests:
+          - relationships:
+              to: ref('stg_db__addresses')
+              field: address_id
 
       - name: last_updated
         description: ""
