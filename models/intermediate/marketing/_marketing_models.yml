@@ -10,6 +10,9 @@ models:
     columns:
       - name: address_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: address
         description: ""
@@ -46,6 +49,9 @@ models:
     columns:
       - name: address_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: address
         description: ""

@@ -319,6 +319,9 @@ models:
     columns:
       - name: actor_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: name
         description: ""
@@ -337,6 +340,9 @@ models:
     columns:
       - name: address_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: address
         description: ""
@@ -376,6 +382,9 @@ models:
     columns:
       - name: category_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: name
         description: ""
@@ -390,6 +399,9 @@ models:
     columns:
       - name: city_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: city
         description: ""
@@ -407,6 +419,9 @@ models:
     columns:
       - name: country_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: country
         description: ""
@@ -423,6 +438,9 @@ models:
     columns:
       - name: customer_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: store_id
         description: ""
@@ -473,6 +491,9 @@ models:
     columns:
       - name: film_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: category_id
         description: ""
@@ -487,6 +508,9 @@ models:
     columns:
       - name: film_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: title
         description: ""
@@ -531,6 +555,9 @@ models:
     columns:
       - name: inventory_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: film_id
         description: ""
@@ -548,6 +575,9 @@ models:
     columns:
       - name: language_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: name
         description: ""
@@ -562,6 +592,9 @@ models:
     columns:
       - name: payment_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: customer_id
         description: ""
@@ -585,6 +618,9 @@ models:
     columns:
       - name: rental_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: rental_date
         description: ""
@@ -613,6 +649,9 @@ models:
     columns:
       - name: staff_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: name
         description: ""
@@ -652,6 +691,9 @@ models:
     columns:
       - name: store_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: manager_staff_id
         description: ""

@@ -6,6 +6,9 @@ models:
     columns:
       - name: rental_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: rental_date
         description: ""
@@ -33,6 +36,9 @@ models:
     columns:
       - name: payment_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: payment_customer_id
         description: ""

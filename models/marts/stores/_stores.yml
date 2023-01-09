@@ -6,6 +6,9 @@ models:
     columns:
       - name: store_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: manager_staff_id
         description: ""
@@ -59,4 +62,46 @@ models:
         description: ""
 
       - name: last_updated
+        description: ""
+
+  - name: staff
+    description: ""
+    meta:
+      contains_pii: true
+    columns:
+      - name: staff_id
+        description: ""
+        tests:
+          - unique
+          - not_null
+
+      - name: name
+        description: ""
+        meta:
+          contains_pii: true
+
+      - name: address_id
+        description: ""
+
+      - name: email
+        description: ""
+        meta:
+          contains_pii: true
+
+      - name: store_id
+        description: ""
+
+      - name: active
+        description: ""
+
+      - name: username
+        description: ""
+
+      - name: password
+        description: ""
+
+      - name: last_updated
+        description: ""
+
+      - name: picture
         description: ""

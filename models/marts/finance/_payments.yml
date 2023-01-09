@@ -6,6 +6,9 @@ models:
     columns:
       - name: payment_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: payment_customer_id
         description: ""

@@ -57,6 +57,9 @@ models:
     columns:
       - name: customer_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: store_id
         description: ""
