@@ -163,6 +163,9 @@ sources:
             description: ""
           - name: rating
             description: ""
+            tests:
+              - accepted_values:
+                  values: ['G', 'PG', 'PG-13', 'R', 'NC-17']
           - name: last_update
             description: ""
           - name: special_features
@@ -538,6 +541,9 @@ models:
 
       - name: rating
         description: ""
+        tests:
+          - accepted_values:
+              values: [ 'G', 'PG', 'PG-13', 'R', 'NC-17' ]
 
       - name: last_updated
         description: ""

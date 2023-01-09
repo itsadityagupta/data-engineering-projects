@@ -6,6 +6,9 @@ models:
     columns:
       - name: film_id
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: title
         description: ""
@@ -39,6 +42,9 @@ models:
 
       - name: rating
         description: ""
+        tests:
+          - accepted_values:
+              values: [ 'G', 'PG', 'PG-13', 'R', 'NC-17' ]
 
       - name: special_features
         description: ""
