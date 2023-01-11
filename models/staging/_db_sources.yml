@@ -3,63 +3,65 @@ version: 2
 sources:
   - name: dvdrental
     schema: public
-    description: A replica of the dvdrental database in PostgreSQL.
+    description: '{{ doc("dvdrental") }}'
     tables:
       - name: actors
         identifier: actor
+        description: '{{ doc("actors_source") }}'
         meta:
           contains_pii: true
         columns:
           - name: actor_id
-            description: ""
+            description: '{{ doc("actor_id") }}'
             tests:
               - unique
               - not_null
           - name: first_name
-            description: ""
+            description: '{{ doc("actor_first_name") }}'
             meta:
               contains_pii: true
           - name: last_name
-            description: ""
+            description: '{{ doc("actor_last_name") }}'
             meta:
               contains_pii: true
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
 
       - name: addresses
         identifier: address
+        description: '{{ doc("addresses") }}'
         meta:
           contains_pii: true
         columns:
           - name: address_id
-            description: ""
+            description: '{{ doc("address_id") }}'
             tests:
               - unique
               - not_null
           - name: address
-            description: ""
+            description: '{{ doc("address") }}'
             meta:
               contains_pii: true
           - name: address2
-            description: ""
+            description: '{{ doc("address2") }}'
             meta:
               contains_pii: true
           - name: district
-            description: ""
+            description: '{{ doc("district") }}'
             meta:
               contains_pii: true
           - name: city_id
-            description: ""
+            description: '{{ doc("city_id") }}'
           - name: postal_code
-            description: ""
+            description: '{{ doc("postal_code") }}'
             meta:
               contains_pii: true
           - name: phone
-            description: ""
+            description: '{{ doc("phone") }}'
             meta:
               contains_pii: true
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
 
       - name: categories
         identifier: category
@@ -72,7 +74,7 @@ sources:
           - name: name
             description: ""
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
 
       - name: cities
         identifier: city
@@ -87,7 +89,7 @@ sources:
           - name: country_id
             description: ""
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
 
       - name: countries
         identifier: country
@@ -100,7 +102,7 @@ sources:
           - name: country
             description: ""
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
 
       - name: customers
         identifier: customer
@@ -133,7 +135,7 @@ sources:
           - name: create_date
             description: ""
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
           - name: active
             description: ""
 
@@ -167,7 +169,7 @@ sources:
               - accepted_values:
                   values: ['G', 'PG', 'PG-13', 'R', 'NC-17']
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
           - name: special_features
             description: ""
           - name: fulltext
@@ -181,7 +183,7 @@ sources:
           - name: film_id
             description: ""
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
 
       - name: film_categories
         identifier: film_category
@@ -194,7 +196,7 @@ sources:
           - name: category_id
             description: ""
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
 
       - name: inventory
         columns:
@@ -208,7 +210,7 @@ sources:
           - name: store_id
             description: ""
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
 
       - name: languages
         identifier: language
@@ -221,7 +223,7 @@ sources:
           - name: name
             description: ""
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
 
       - name: payments
         identifier: payment
@@ -261,7 +263,7 @@ sources:
           - name: staff_id
             description: ""
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
 
       - name: staff
         meta:
@@ -293,7 +295,7 @@ sources:
           - name: password
             description: ""
           - name: last_update
-            description: ""
+            description: '{{ doc("last_updated") }}'
           - name: picture
             description: ""
 
@@ -309,5 +311,5 @@ sources:
             description: ""
           - name: address_id
             description: ""
-          - name: last_updated
-            description: ""
+          - name: last_update
+            description: '{{ doc("last_updated") }}'
