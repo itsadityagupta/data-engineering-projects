@@ -65,29 +65,31 @@ sources:
 
       - name: categories
         identifier: category
+        description: '{{ doc("categories") }}'
         columns:
           - name: category_id
-            description: ""
+            description: '{{ doc("category_id") }}'
             tests:
               - unique
               - not_null
           - name: name
-            description: ""
+            description: '{{ doc("category_name") }}'
           - name: last_update
             description: '{{ doc("last_updated") }}'
 
       - name: cities
         identifier: city
+        description: '{{ doc("cities") }}'
         columns:
           - name: city_id
-            description: ""
+            description: '{{ doc("city_id") }}'
             tests:
               - unique
               - not_null
           - name: city
-            description: ""
+            description: '{{ doc("city") }}'
           - name: country_id
-            description: ""
+            description: '{{ doc("country_id") }}'
           - name: last_update
             description: '{{ doc("last_updated") }}'
 

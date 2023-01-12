@@ -71,38 +71,38 @@ models:
         description: '{{ doc("last_updated") }}'
 
   - name: stg_db__categories
-    description: ""
+    description: '{{ doc("categories") }}'
     config:
       tags: [ 'films' ]
     columns:
       - name: category_id
-        description: ""
+        description: '{{ doc("category_id") }}'
         tests:
           - unique
           - not_null
 
       - name: name
-        description: ""
+        description: '{{ doc("category_name") }}'
 
       - name: last_updated
         description: '{{ doc("last_updated") }}'
 
   - name: stg_db__cities
-    description: ""
+    description: '{{ doc("cities") }}'
     config:
       tags: [ "marketing", "stores" ]
     columns:
       - name: city_id
-        description: ""
+        description: '{{ doc("city_id") }}'
         tests:
           - unique
           - not_null
 
       - name: city
-        description: ""
+        description: '{{ doc("city") }}'
 
       - name: country_id
-        description: ""
+        description: '{{ doc("country_id") }}'
         tests:
           - relationships:
               to: ref('stg_db__countries')

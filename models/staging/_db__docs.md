@@ -104,3 +104,73 @@ Postal code of the address.
 Phone number of the addressee.
 
 {% enddocs %}
+
+{% docs categories %}
+
+Stores category names.
+
+{% enddocs %}
+
+{% docs category_id %}
+
+Uniquely identifies each category.
+
+{% enddocs %}
+
+{% docs category_name %}
+
+Category name.
+
+{% enddocs %}
+
+{% docs cities %}
+
+City names and the country_id taken from [countries](#!/source/source.dvdrental.dvdrental.countries) table.
+
+{% enddocs %}
+
+{% docs city_id %}
+
+Uniquely identifies each city.
+
+{% enddocs %}
+
+{% docs city %}
+
+City name.
+
+{% enddocs %}
+
+{% docs country_id %}
+
+Foreign key to [countries](#!/source/source.dvdrental.dvdrental.countries) table.
+
+{% enddocs %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
