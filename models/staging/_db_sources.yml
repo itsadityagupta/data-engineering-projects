@@ -51,7 +51,7 @@ sources:
             meta:
               contains_pii: true
           - name: city_id
-            description: '{{ doc("city_id") }}'
+            description: '{{ doc("address_city_id") }}'
           - name: postal_code
             description: '{{ doc("postal_code") }}'
             meta:

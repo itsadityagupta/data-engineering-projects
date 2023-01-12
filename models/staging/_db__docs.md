@@ -87,7 +87,7 @@ District name.
 
 {% enddocs %}
 
-{% docs city_id %}
+{% docs address_city_id %}
 
 Id of the city. Acts as a foreign key refering to [cities](#!/source/source.dvdrental.dvdrental.cities) table.
 

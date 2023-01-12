@@ -51,7 +51,7 @@ models:
           contains_pii: true
 
       - name: city_id
-        description: '{{ doc("city_id") }}'
+        description: '{{ doc("address_city_id") }}'
         tests:
           - relationships:
               to: ref('stg_db__cities')
