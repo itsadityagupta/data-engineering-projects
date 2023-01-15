@@ -89,41 +89,43 @@ sources:
           - name: city
             description: '{{ doc("city") }}'
           - name: country_id
-            description: '{{ doc("country_id") }}'
+            description: '{{ doc("cities_country_id") }}'
           - name: last_update
             description: '{{ doc("last_updated") }}'
 
       - name: countries
         identifier: country
+        description: '{{ doc("countries") }}'
         columns:
           - name: country_id
-            description: ""
+            description: '{{ doc("country_id") }}'
             tests:
               - unique
               - not_null
           - name: country
-            description: ""
+            description: '{{ doc("country") }}'
           - name: last_update
             description: '{{ doc("last_updated") }}'
 
       - name: customers
         identifier: customer
+        description: '{{ doc("customers") }}'
         meta:
           contains_pii: true
         columns:
           - name: customer_id
-            description: ""
+            description: '{{ doc("customer_id") }}'
             tests:
               - unique
               - not_null
           - name: store_id
-            description: ""
+            description: '{{ doc("customers_store_id") }}'
           - name: first_name
-            description: ""
+            description: '{{ doc("customer_first_name") }}'
             meta:
               contains_pii: true
           - name: last_name
-            description: ""
+            description: '{{ doc("customer_last_name") }}'
             meta:
               contains_pii: true
           - name: email

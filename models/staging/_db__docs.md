@@ -141,13 +141,65 @@ City name.
 
 {% enddocs %}
 
-{% docs country_id %}
+{% docs cities_country_id %}
 
 Foreign key to [countries](#!/source/source.dvdrental.dvdrental.countries) table.
 
 {% enddocs %}
 
+{% docs countries %}
 
+Stores country names.
+
+{% enddocs %}
+
+{% docs country_id %}
+
+Uniquely identifies each country.
+
+{% enddocs %}
+
+{% docs country %}
+
+Country name.
+
+{% enddocs %}
+
+{% docs customers %}
+
+Stores customer information.
+
+{% enddocs %}
+
+{% docs customer_id %}
+
+Uniquely identifies each customer.
+
+{% enddocs %}
+
+{% docs customers_store_id %}
+
+Store id foreign key to [stores](#!/source/source.dvdrental.dvdrental.stores) table.
+
+{% enddocs %}
+
+{% docs customer_name %}
+
+Name of the customer.
+
+{% enddocs %}
+
+{% docs customer_first_name %}
+
+First name of the customer.
+
+{% enddocs %}
+
+{% docs customer_last_name %}
+
+Last name of the customer.
+
+{% enddocs %}
 
 
 

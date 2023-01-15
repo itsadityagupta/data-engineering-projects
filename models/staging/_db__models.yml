@@ -102,7 +102,7 @@ models:
         description: '{{ doc("city") }}'
 
       - name: country_id
-        description: '{{ doc("country_id") }}'
+        description: '{{ doc("cities_country_id") }}'
         tests:
           - relationships:
               to: ref('stg_db__countries')
@@ -112,40 +112,40 @@ models:
         description: '{{ doc("last_updated") }}'
 
   - name: stg_db__countries
-    description: ""
+    description: '{{ doc("countries") }}'
     config:
       tags: [ "marketing", "stores" ]
     columns:
       - name: country_id
-        description: ""
+        description: '{{ doc("country_id") }}'
         tests:
           - unique
           - not_null
 
       - name: country
-        description: ""
+        description: '{{ doc("country") }}'
 
       - name: last_updated
         description: '{{ doc("last_updated") }}'
 
   - name: stg_db__customers
-    description: ""
+    description: '{{ doc("customers") }}'
     config:
       tags: [ "marketing" ]
     meta:
       contains_pii: true
     columns:
       - name: customer_id
-        description: ""
+        description: '{{ doc("customer_id") }}'
         tests:
           - unique
           - not_null
 
       - name: store_id
-        description: ""
+        description: '{{ doc("customers_store_id") }}'
 
       - name: name
-        description: ""
+        description: '{{ doc("customer_name") }}'
         meta:
           contains_pii: true
 
