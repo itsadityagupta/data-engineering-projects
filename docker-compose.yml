@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres:13
+    restart: on-failure
+    container_name: ny-taxi-postgres
+    environment:
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "root"
+      POSTGRES_DB: "ny_taxi"
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  data:
+#  pgadmin:
+#    container_name: pgadmin
+#    image: dpage/pgadmin4
+#    restart: always
+#    environment:
+#      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+#      PGADMIN_DEFAULT_PASSWORD: root
+#    ports:
+#      - "5050:80"
