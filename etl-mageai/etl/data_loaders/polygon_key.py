@@ -1,1 +1,0 @@
-POLYGON_KEY = '' # Paste your polygon API key here

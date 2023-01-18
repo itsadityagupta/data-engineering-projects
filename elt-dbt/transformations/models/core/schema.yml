@@ -1,5 +1,0 @@
-version: 2
-
-models:
-  - name: customers_churned_per_city
-    description: Number of customers churned per city
