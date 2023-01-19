@@ -9,19 +9,47 @@ services:
       POSTGRES_USER: "root"
       POSTGRES_PASSWORD: "root"
       POSTGRES_DB: "ny_taxi"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     volumes:
       - data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+    networks:
+      - pg-network
+
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "5050:80"
+    networks:
+      - pg-network
+
+  ingest-data:
+    image: ingest-data
+    container_name: ny-ingest-data
+    build: .
+    environment:
+      PG_USER_ENV: root
+      PG_PASSWORD_ENV: root
+      PG_HOST_ENV: postgres
+      PG_DB_ENV: ny_taxi
+      PG_TABLE_ENV: yellow_taxi_trips
+      PG_PORT_ENV: 5432
+      PG_URL_ENV: https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz
+    networks:
+      - pg-network
 
 volumes:
   data:
-#  pgadmin:
-#    container_name: pgadmin
-#    image: dpage/pgadmin4
-#    restart: always
-#    environment:
-#      PGADMIN_DEFAULT_EMAIL: admin@admin.com
-#      PGADMIN_DEFAULT_PASSWORD: root
-#    ports:
-#      - "5050:80"
+networks:
+  pg-network:
+    driver: bridge
