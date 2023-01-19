@@ -13,6 +13,10 @@ services:
       - ./data/dvdrental:/docker-entrypoint-initdb.d
     ports:
       - "5432:5432"
+    networks:
+      - dvdrental-network
+
+
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
@@ -22,3 +26,32 @@ services:
       PGADMIN_DEFAULT_PASSWORD: root
     ports:
       - "5050:80"
+    depends_on:
+      - db
+    networks:
+      - dvdrental-network
+
+
+  dashboard:
+    container_name: metabase_dashboard
+    image: metabase/metabase
+    restart: on-failure
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: dvdrental
+      MB_DB_PORT: 5432
+      MB_DB_USER: postgres
+      MB_DB_PASS: postgres
+      MB_DB_HOST: db
+    volumes:
+      - ./metabase-data:/metabase-data
+    ports:
+      - "3001:3000"
+    depends_on:
+      - db
+    networks:
+      - dvdrental-network
+
+networks:
+  dvdrental-network:
+    driver: bridge
