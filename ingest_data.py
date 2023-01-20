@@ -1,22 +1,17 @@
 import argparse
-import gzip
 import pandas as pd
 import requests
-import shutil
 from sqlalchemy import create_engine
 from time import time
 
 
-def download_csv(url, csv_name):
+def download_csv(url):
     file_name = url.split("/")[-1]
     # downloading zip file
     with open(file_name, 'wb') as f:
         response = requests.get(url)
         f.write(response.content)
-    # extract the csv file from zip file
-    with gzip.open(file_name, 'rb') as f_in:
-        with open(csv_name, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
+    return file_name
 
 
 def save_to_postgres(params):
@@ -27,11 +22,10 @@ def save_to_postgres(params):
     db = params.db
     table_name = params.table_name
     url = params.url
-    csv_name = 'output.csv'
-
-    download_csv(url, csv_name)
+    csv_name = download_csv(url)
 
     engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}')
+    # read_csv reads both .csv files and .csv.gz files
     df_iter = pd.read_csv(csv_name, iterator=True, chunksize=100000)
 
     df = next(df_iter)
