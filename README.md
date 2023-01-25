@@ -1,4 +1,4 @@
-# ELT Pipeline
+# ELT Pipeline - Telecom Customer Data
 
 ### About
 This is an ELT data pipeline built using **Python**, **PostgreSQL** and **DBT**.
