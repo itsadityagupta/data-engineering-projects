@@ -1,1 +1,0 @@
-{"column_types": {"id": "number", "type": "category", "asset_class": "true_or_false", "locale": "true_or_false", "name": "text", "acronym": "true_or_false", "mic": "text", "operating_mic": "category", "participant_id": "text", "url": "category"}}

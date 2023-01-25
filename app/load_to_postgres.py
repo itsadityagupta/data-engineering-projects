@@ -1,6 +1,5 @@
 import csv
 
-import app_config
 import psycopg2
 from logger import logger
 from shared import app_functions

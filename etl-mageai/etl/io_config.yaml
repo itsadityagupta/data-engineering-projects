@@ -1,7 +1,0 @@
-version: 0.1.1
-default:
-  POSTGRES_DBNAME: stocks_warehouse
-  POSTGRES_HOST: localhost
-  POSTGRES_PASSWORD: aditya1234
-  POSTGRES_PORT: 5432
-  POSTGRES_USER: aditya

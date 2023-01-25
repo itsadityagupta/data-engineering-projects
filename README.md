@@ -19,13 +19,14 @@ The dataset is taken from [Kaggle](https://www.kaggle.com/datasets/blastchar/tel
 1. Run `make up` or `docker-compose up --build`. This will initialize a postgres database `churn` and load the data from csv files into the database.
 2. Install dbt using `pip install dbt-postgres`.
 3. Make sure that your `~/.dbt/profiles.yml` has the profile mentioned in `./transformations/profiles.yml`.
-4. Run `dbt run`.
-5. This will create `staging` and `transformed` schema in the postgres database. `Staging` schema will only have views whereas `transformed` schema will have the tables.
-6. To generate and view the docs, run the following 2 commands:
+4. Change directory to transformations `cd transformations`
+5. Run `dbt run`.
+6. This will create `staging` and `transformed` schema in the postgres database. `Staging` schema will only have views whereas `transformed` schema will have the tables.
+7. To generate and view the docs, run the following 2 commands:
    1. `dbt docs generate`
    2. `dbt docs serve`
-7. This will open up a server at [http://localhost:8080](http://localhost:8080) where you can view the docs, the lineage and the data models.
-8. To run the tests, run `dbt test`.
+8. This will open up a server at [http://localhost:8080](http://localhost:8080) where you can view the docs, the lineage and the data models.
+9. To run the tests, run `dbt test`.
 
 ### Things I learned
 
