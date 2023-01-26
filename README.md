@@ -19,6 +19,6 @@ The application extracts the data from Polygon API, transforms it and loads them
 - Mage UI will open with a pipeline named `initial load`.
 - Press the execute pipeline to run the pipeline.
 
-![](https://github.com/Aditya-Gupta1/etl-pipeline/blob/main/ezgif.com-gif-maker.gif)
+![](ezgif.com-gif-maker.gif)
 
 
