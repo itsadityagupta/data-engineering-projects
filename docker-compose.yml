@@ -44,12 +44,22 @@ services:
       MB_DB_PASS: postgres
       MB_DB_HOST: db
       MB_DB_FILE: /metabase-data/metabase.db
-      MUID: $UID
-      MGID: $GID
     volumes:
       - ./metabase-data:/metabase-data
     ports:
       - "3001:3000"
+    depends_on:
+      - db
+    networks:
+      - dvdrental-network
+
+  dbt-workload:
+    container_name: dbt-dvdrental
+    restart: on-failure
+    build: .
+    image: dbt-dvdrental-image
+    ports:
+      - "8080:8080"
     depends_on:
       - db
     networks:

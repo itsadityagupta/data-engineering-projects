@@ -1,0 +1,11 @@
+.gitignore
+dbt-docs.bat
+docker-clean.sh
+docker-reset.sh
+dvd-rental-finance-dashboard.jpg
+README.md
+dbt_packages
+logs
+target
+prefect-zoomcamp
+terraform
