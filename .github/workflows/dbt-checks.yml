@@ -3,7 +3,7 @@ name: dbt_checks
 on:
   push:
     branches:
-      - main
+      - dvdrental
 
 jobs:
   dbt_checks:
