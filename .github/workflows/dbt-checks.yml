@@ -19,7 +19,7 @@ jobs:
           python-version: '3.9'
       - name: Install dependencies
         run: |
-          pip install dbt
+          pip install dbt-postgres
           dbt deps
       - name: Setup Database
         run: docker-compose up db
