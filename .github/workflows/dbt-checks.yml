@@ -1,0 +1,29 @@
+name: dbt_checks
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dbt_checks:
+    name: dbt_checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+      - name: Setup Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: |
+          pip install dbt
+          dbt deps
+      - name: Setup Database
+        run: docker-compose up db
+      - name: Run DBT commands
+        run: dbt build --profiles-dir profiles
+      - name: Stop Database
+        run: docker-compose down db
