@@ -11,6 +11,6 @@ RUN pip install -r requirements.txt --no-cache-dir
 RUN dbt deps
 
 EXPOSE 8080
-ENTRYPOINT dbt build --profiles-dir profiles && \
+CMD dbt build --profiles-dir profiles && \
            dbt docs generate --profiles-dir profiles && \
            dbt docs serve --profiles-dir profiles
