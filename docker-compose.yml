@@ -5,10 +5,8 @@ services:
     image: postgres:13
     restart: on-failure
     container_name: dvdrental-postgres
-    environment:
-      POSTGRES_USER: "postgres"
-      POSTGRES_PASSWORD: "postgres"
-      POSTGRES_DB: "tempdb"
+    env_file:
+      - .env
     volumes:
       - ./data/dvdrental:/docker-entrypoint-initdb.d
     ports:
@@ -21,9 +19,8 @@ services:
     container_name: pgadmin
     image: dpage/pgadmin4
     restart: on-failure
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@admin.com
-      PGADMIN_DEFAULT_PASSWORD: root
+    env_file:
+      - .env
     ports:
       - "5050:80"
     depends_on:
@@ -36,14 +33,8 @@ services:
     container_name: metabase_dashboard
     image: metabase/metabase
     restart: on-failure
-    environment:
-      MB_DB_TYPE: postgres
-      MB_DB_DBNAME: dvdrental
-      MB_DB_PORT: 5432
-      MB_DB_USER: postgres
-      MB_DB_PASS: postgres
-      MB_DB_HOST: db
-      MB_DB_FILE: /metabase-data/metabase.db
+    env_file:
+      - .env
     volumes:
       - ./metabase-data:/metabase-data
     ports:
