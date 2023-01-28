@@ -1,4 +1,5 @@
 .gitignore
+.env
 dbt-docs.bat
 docker-clean.sh
 docker-reset.sh

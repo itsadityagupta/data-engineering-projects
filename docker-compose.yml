@@ -58,6 +58,8 @@ services:
     restart: on-failure
     build: .
     image: dbt-dvdrental-image
+    env_file:
+      - .env
     ports:
       - "8080:8080"
     depends_on:
