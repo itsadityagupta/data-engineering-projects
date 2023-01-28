@@ -220,7 +220,7 @@ models:
         description: '{{ doc("last_updated") }}'
 
   - name: stg_db__films
-    description: ""
+    description: '{{ doc("films") }}'
     config:
       tags: [ 'films' ]
     columns:

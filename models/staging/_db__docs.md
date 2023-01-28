@@ -219,6 +219,12 @@ Record creation date.
 
 {% enddocs %}
 
+{% docs films %}
+
+Stores films.
+
+{% enddocs %}
+
 
 
 

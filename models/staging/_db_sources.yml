@@ -152,6 +152,7 @@ sources:
 
       - name: films
         identifier: film
+        description: '{{ doc("films") }}'
         tags: [ 'films' ]
         columns:
           - name: film_id
