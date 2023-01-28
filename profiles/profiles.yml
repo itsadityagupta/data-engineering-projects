@@ -3,11 +3,11 @@ dbtdvdrental:
     dev:
       type: postgres
       threads: 1
-      host: db
-      port: 5432
-      user: postgres
-      pass: postgres
-      dbname: dvdrental
-      schema: analysis
+      host: "{{ env_var('DBT_HOST') }}"
+      port: "{{ env_var('DBT_PORT') | int }}"
+      user: "{{ env_var('DBT_USER') }}"
+      pass: "{{ env_var('DBT_PASSWORD') }}"
+      dbname: "{{ env_var('DBT_POSTGES_DB') }}"
+      schema: "{{ env_var('DBT_DBT_SCHEMA') }}"
 
   target: dev
