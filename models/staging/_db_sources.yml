@@ -4,12 +4,14 @@ sources:
   - name: dvdrental
     schema: public
     description: '{{ doc("dvdrental") }}'
+    tags: [ 'sources' ]
     tables:
       - name: actors
         identifier: actor
         description: '{{ doc("actors_source") }}'
         meta:
           contains_pii: true
+        tags: [ 'films' ]
         columns:
           - name: actor_id
             description: '{{ doc("actor_id") }}'
@@ -32,6 +34,7 @@ sources:
         description: '{{ doc("addresses") }}'
         meta:
           contains_pii: true
+        tags: [ 'marketing', 'stores' ]
         columns:
           - name: address_id
             description: '{{ doc("address_id") }}'
@@ -66,6 +69,7 @@ sources:
       - name: categories
         identifier: category
         description: '{{ doc("categories") }}'
+        tags: [ 'films' ]
         columns:
           - name: category_id
             description: '{{ doc("category_id") }}'
@@ -80,6 +84,7 @@ sources:
       - name: cities
         identifier: city
         description: '{{ doc("cities") }}'
+        tags: [ "marketing", "stores" ]
         columns:
           - name: city_id
             description: '{{ doc("city_id") }}'
@@ -96,6 +101,7 @@ sources:
       - name: countries
         identifier: country
         description: '{{ doc("countries") }}'
+        tags: [ "marketing", "stores" ]
         columns:
           - name: country_id
             description: '{{ doc("country_id") }}'
@@ -112,6 +118,7 @@ sources:
         description: '{{ doc("customers") }}'
         meta:
           contains_pii: true
+        tags: [ 'marketing' ]
         columns:
           - name: customer_id
             description: '{{ doc("customer_id") }}'
@@ -145,6 +152,7 @@ sources:
 
       - name: films
         identifier: film
+        tags: [ 'films' ]
         columns:
           - name: film_id
             description: ""
@@ -181,6 +189,7 @@ sources:
 
       - name: film_actors
         identifier: film_actor
+        tags: [ 'films' ]
         columns:
           - name: actor_id
             description: ""
@@ -191,6 +200,7 @@ sources:
 
       - name: film_categories
         identifier: film_category
+        tags: [ 'films' ]
         columns:
           - name: film_id
             description: ""
@@ -203,6 +213,7 @@ sources:
             description: '{{ doc("last_updated") }}'
 
       - name: inventory
+        tags: [ "finance" ]
         columns:
           - name: inventory_id
             description: ""
@@ -218,6 +229,7 @@ sources:
 
       - name: languages
         identifier: language
+        tags: [ 'films' ]
         columns:
           - name: language_id
             description: ""
@@ -231,6 +243,7 @@ sources:
 
       - name: payments
         identifier: payment
+        tags: [ "finance" ]
         columns:
           - name: payment_id
             description: ""
@@ -250,6 +263,7 @@ sources:
 
       - name: rentals
         identifier: rental
+        tags: [ "finance" ]
         columns:
           - name: rental_id
             description: ""
@@ -272,6 +286,7 @@ sources:
       - name: staff
         meta:
           contains_pii: true
+        tags: [ "stores" ]
         columns:
           - name: staff_id
             description: ""
@@ -305,6 +320,7 @@ sources:
 
       - name: stores
         identifier: store
+        tags: [ "marketing", "stores" ]
         columns:
           - name: store_id
             description: ""
