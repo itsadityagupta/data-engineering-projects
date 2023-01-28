@@ -15,7 +15,7 @@ ENV DBT_HOST=db
 ENV DBT_POSTGES_DB=dvdrental
 ENV DBT_PASSWORD=postgres
 ENV DBT_PORT=5432
-ENV DBT_DBT_SCHEMA=analysis
+ENV DBT_SCHEMA=analysis
 
 EXPOSE 8080
 CMD dbt build --profiles-dir profiles && \
