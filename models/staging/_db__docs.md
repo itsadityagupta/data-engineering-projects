@@ -201,7 +201,23 @@ Last name of the customer.
 
 {% enddocs %}
 
+{% docs customer_email %}
 
+Email address of the customer.
+
+{% enddocs %}
+
+{% docs customer_address_id %}
+
+Address id of the customer.
+
+{% enddocs %}
+
+{% docs customer_create_date %}
+
+Record creation date.
+
+{% enddocs %}
 
 
 

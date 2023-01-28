@@ -136,15 +136,15 @@ sources:
             meta:
               contains_pii: true
           - name: email
-            description: ""
+            description: '{{ doc("customer_email") }}'
             meta:
               contains_pii: true
           - name: address_id
-            description: ""
+            description: '{{ doc("customer_address_id") }}'
           - name: activebool
             description: ""
           - name: create_date
-            description: ""
+            description: '{{ doc("customer_create_date") }}'
           - name: last_update
             description: '{{ doc("last_updated") }}'
           - name: active
