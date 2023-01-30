@@ -16,9 +16,9 @@ assignments and projects that cover a wide range of topics such as data pipeline
 
 ### DVD Rental Data Transformation Pipeline using [DBT (Data Build Tool)](https://www.getdbt.com/)
 
-| **Date**           	| **Domain**            	| **Branch**                                                                             	| **Skills** 	                        |
-|--------------------	|-----------------------	|----------------------------------------------------------------------------------------	|-------------------------------------|
-| Jan 2023 - Present 	| Analytics Engineering 	| [dvdrental](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/dvdrental) 	| DBT, Metabase, Docker, SQL        	 |
+| **Date**           	 | **Domain**            	| **Branch**                                                                             	| **Skills** 	                        |
+|----------------|-----------------------	|----------------------------------------------------------------------------------------	|-------------------------------------|
+| Jan 2023 	     | Analytics Engineering 	| [dvdrental](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/dvdrental) 	| DBT, Metabase, Docker, SQL        	 |
 
 This DBT project utilizes the DVD rental database and implements various transformations to clean and structure the data. A dashboard is then created to display the insights 
 and analysis derived from the transformed data. The project demonstrates the use of DBT to perform data modeling and manipulation tasks, as well as the ability to create a 
