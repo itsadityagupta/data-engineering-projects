@@ -1,0 +1,66 @@
+###
+### A complete description of a Prefect Deployment for flow 'etl-parent-flow'
+###
+name: WEB2GCS-FebMarch2019-Yellow
+description: null
+version: e8f4542d3d6e5637fa007810a67ad5b9
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {
+  "months": [2, 3],
+  "years": [2019],
+  "colors": ["yellow"]
+}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-parent-flow
+manifest_path: null
+storage: null
+path: /home/aditya/prefect-zoomcamp
+entrypoint: flows/03_deployments/parameterized_flow.py:etl_parent_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    months:
+      title: months
+      default:
+      - 1
+      - 2
+      position: 0
+      type: array
+      items:
+        type: integer
+    years:
+      title: years
+      default:
+      - 2021
+      position: 1
+      type: array
+      items:
+        type: integer
+    colors:
+      title: colors
+      default:
+      - yellow
+      position: 2
+      type: array
+      items:
+        type: string
+  required: null
+  definitions: null

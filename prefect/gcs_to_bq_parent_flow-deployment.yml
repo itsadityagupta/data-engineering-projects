@@ -1,0 +1,60 @@
+###
+### A complete description of a Prefect Deployment for flow 'gcs-to-bq-parent-flow'
+###
+name: GCS2BQ-Yellow
+description: null
+version: 271d37d57a15c132fb23713f12621a3f
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {
+  "months": [2, 3],
+  "year": 2019,
+  "color": "yellow"
+}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: gcs-to-bq-parent-flow
+manifest_path: null
+storage: null
+path: /home/aditya/prefect-zoomcamp
+entrypoint: flows/03_deployments/gcs_to_bq.py:gcs_to_bq_parent_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    months:
+      title: months
+      default:
+      - 1
+      - 2
+      position: 0
+      type: array
+      items:
+        type: integer
+    year:
+      title: year
+      default: 2020
+      position: 1
+      type: integer
+    color:
+      title: color
+      default: yellow
+      position: 2
+      type: string
+  required: null
+  definitions: null
