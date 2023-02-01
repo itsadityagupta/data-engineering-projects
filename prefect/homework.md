@@ -1,7 +1,5 @@
 ## Prefect Homework
 
-Homework Link: 
-
 **Answer 1**
 
 447770
@@ -13,3 +11,15 @@ Homework Link:
 **Answer 3**
 
 14,851,920
+
+**Answer 4**
+
+88605
+
+**Answer 5**
+
+514392
+
+**Answer 6**
+
+8
