@@ -8,3 +8,7 @@ Learned about:
 - [Building a data pipeline to ingest data to Postgres after reading from CSV files. Additionally, dockerizing the pipeline.](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023/ingest_data_postgres)
 - [Creating resources on GCP using Terraform](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023/terraform)
 
+### Week-2
+
+Learned about:
+- [orchestrating workflows using Prefect.](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023/prefect)
