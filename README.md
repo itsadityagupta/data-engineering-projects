@@ -12,3 +12,8 @@ Learned about:
 
 Learned about:
 - [orchestrating workflows using Prefect.](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023/prefect)
+
+### Week-3
+
+Learned about:
+- BigQuery fundamentals, internal and external tables, partitioning, clustering, cost and BigQuery internals.
