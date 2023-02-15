@@ -9,7 +9,7 @@
 
 | **Date** 	                | **Domain** 	       | **Branch**      	| **Skills**    |
 |---------------------------|--------------------|-----------------	| ----------------- |
-| Jan 2023 - Present      	 | Data Engineering 	 |  [de-zoomcamp-2023](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023)	| Python, Docker, Terraform, Prefect |
+| Jan 2023 - Present      	 | Data Engineering 	 |  [de-zoomcamp-2023](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023)	| Python, Docker, Terraform, Prefect, DBT, BigQuery, Postgres, GCS |
 
 The Data Engineering Zoomcamp 2023 course is designed to provide a comprehensive understanding of data engineering techniques and practices. The course includes various 
 assignments and projects that cover a wide range of topics such as data pipeline development (ETL/ELT), data warehousing, workflow orchestration and many such things.
