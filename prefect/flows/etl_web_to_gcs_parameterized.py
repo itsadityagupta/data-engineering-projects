@@ -24,6 +24,15 @@ def clean(df: pd.DataFrame, color: str) -> pd.DataFrame:
     else:
         df["lpep_pickup_datetime"] = pd.to_datetime(df["lpep_pickup_datetime"])
         df["lpep_dropoff_datetime"] = pd.to_datetime(df["lpep_dropoff_datetime"])
+        df['trip_type'] = df['trip_type'].astype('Int64')
+
+    # added these transformations to have consistent data type across all the parquet files
+    df["VendorID"] = df["VendorID"].astype('Int64')
+    df['RatecodeID'] = df['RatecodeID'].astype('Int64')
+    df["payment_type"] = df["payment_type"].astype('Int64')
+    df['passenger_count'] = df["passenger_count"].astype('Int64')
+    df['PULocationID'] = df['PULocationID'].astype('Int64')
+    df["DOLocationID"] = df['DOLocationID'].astype('Int64')
 
     print(df.head(2))
     print(f"columns: {df.dtypes}")
@@ -32,15 +41,15 @@ def clean(df: pd.DataFrame, color: str) -> pd.DataFrame:
 
 
 @task()
-def write_local(df: pd.DataFrame, color: str, dataset_file: str) -> Path:
+def write_local(df: pd.DataFrame, color: str, dataset_file: str):
     """Write DataFrame out locally as parquet file"""
-    path = Path(f"data/{color}/{dataset_file}.parquet")
+    path = f"data/{color}/{dataset_file}.parquet"
     df.to_parquet(path, compression="gzip")
     return path
 
 
 @task()
-def write_gcs(path: Path) -> None:
+def write_gcs(path: str) -> None:
     """Upload local parquet file to GCS"""
     gcs_block = GcsBucket.load("gcs-bucket")
     gcs_block.upload_from_path(from_path=path, to_path=path)
