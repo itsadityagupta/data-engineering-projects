@@ -4,6 +4,13 @@
 > that I have worked on. Each project is located in its own git branch, making it easy for you to navigate and 
 > explore the different projects. Please find below a brief overview of the projects.
 
+### LinkedIn Database Design
+
+| **Date** 	| **Domain**     	| **Branch**                                                                                                         	| **Skills**     	|
+|----------	|----------------	|--------------------------------------------------------------------------------------------------------------------	|----------------	|
+| Feb 2023 	| Data Modelling 	| [linkedin-db-design-oltp](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/linkedin-db-design-oltp) 	| Data Modelling 	|
+
+Designed an OLTP database for LinkedIn considering some basic features regarding user profiles, connections, posts and comments. Read the entire blog here: https://itsadityagupta.hashnode.dev/linkedin-database-design
 
 ### Data Engineering ZoomCamp 2023
 
