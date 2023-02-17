@@ -12,7 +12,7 @@ To keep the scope of this blog limited, here are the requirements that we want o
 2. Users can send connection requests to other users, or follow them only. They should also be able to accept or reject the connection request.
 3. Users can create posts, and like and comment on others' 
 
-> Read the entire blog post here: 
+> Find the SQL code for the design in the file [linkedin_database_design.sql](https://github.com/Aditya-Gupta1/data-engineering-projects/blob/linkedin-db-design-oltp/linkedin_database_design.sql) and read the entire blog post [here](https://itsadityagupta.hashnode.dev/linkedin-database-design). 
 
 ### Complete Database Design
 
