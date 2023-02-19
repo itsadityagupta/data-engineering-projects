@@ -7,3 +7,6 @@ terraform/.terraform.lock.hcl
 terraform/terraform.tfstate
 terraform/terraform.tfstate.backup
 *.parquet
+/dbt/fhv-dbt-project/target/
+/dbt/fhv-dbt-project/dbt_packages/
+/dbt/fhv-dbt-project/logs/

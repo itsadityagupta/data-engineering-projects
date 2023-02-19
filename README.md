@@ -17,3 +17,8 @@ Learned about:
 
 Learned about:
 - BigQuery fundamentals, internal and external tables, partitioning, clustering, cost and BigQuery internals.
+
+### Week 4
+
+Learned about:
+- [DBT features like models, sources, macros, tests, docs, seeds, packages and deployments.]()
