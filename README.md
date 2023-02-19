@@ -21,4 +21,4 @@ Learned about:
 ### Week 4
 
 Learned about:
-- [DBT features like models, sources, macros, tests, docs, seeds, packages and deployments.]()
+- [DBT features like models, sources, macros, tests, docs, seeds, packages and deployments.](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023/dbt)
