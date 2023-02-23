@@ -22,3 +22,8 @@ Learned about:
 
 Learned about:
 - [DBT features like models, sources, macros, tests, docs, seeds, packages and deployments.](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023/dbt)
+
+### Week 5
+
+Learned about:
+- [Spark concepts and architecture, DataProc Clusters](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023/spark)
