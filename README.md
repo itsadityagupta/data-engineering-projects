@@ -4,9 +4,30 @@
 > that I have worked on. Each project is located in its own git branch, making it easy for you to navigate and 
 > explore the different projects. Please find below a brief overview of the projects.
 
+### YelpoSphere: Discover the Complete Picture of the Restaurant Industry
+
+<img src="yelp-banner.png" width="950" height="325" />
+
+Do you want to know the latest trends in the restaurant industry, but don't have the time or 
+expertise to sort through Yelp data? This project takes care of the heavy lifting for you.
+
+Using an **end-to-end data pipeline** built on **GCP** with **terraform**; using services like 
+**Cloud Composer, Dataproc, Google Cloud Storage, and DBT**, YelpoSphere provide curated 
+insights into the hottest new spots in town, the most popular dishes, and the trends shaping 
+the industry. 
+
+With this project, you'll have everything you need to stay ahead of the curve and make informed decisions about where to 
+eat next.
+
+| **Date**           	| **Domain**       	| **Project URL**                                                         	| **Skills**                                                                       	|
+|--------------------	|------------------	|-------------------------------------------------------------------------	|----------------------------------------------------------------------------------	|
+| Feb 2023 - Present 	| Data Engineering 	| [yelposphere](https://github.com/Aditya-Gupta1/yelp-gcp-infrastructure) 	| GCP, Apache Spark, Airflow, SQL, Python, GCS, Dataproc, Cloud Composer, BigQuery 	|
+
 ### LinkedIn Database Design
 
-| **Date** 	| **Domain**     	| **Branch**                                                                                                         	| **Skills**     	|
+<img src="linkedin-dd.png" width="950" height="475" />
+
+| **Date** 	| **Domain**     	| **Project URL**                                                                                                         	| **Skills**     	|
 |----------	|----------------	|--------------------------------------------------------------------------------------------------------------------	|----------------	|
 | Feb 2023 	| Data Modelling 	| [linkedin-db-design-oltp](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/linkedin-db-design-oltp) 	| Data Modelling 	|
 
@@ -14,7 +35,9 @@ Designed an OLTP database for LinkedIn considering some basic features regarding
 
 ### Data Engineering ZoomCamp 2023
 
-| **Date** 	                | **Domain** 	       | **Branch**      	| **Skills**    |
+<img src="dezoomcamp2023.png" width="950" height="550" />
+
+| **Date** 	                | **Domain** 	       | **Project URL**      	| **Skills**    |
 |---------------------------|--------------------|-----------------	| ----------------- |
 | Jan 2023 - Present      	 | Data Engineering 	 |  [de-zoomcamp-2023](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023)	| Python, Docker, Terraform, Prefect, DBT, BigQuery, Postgres, GCS |
 
@@ -23,7 +46,7 @@ assignments and projects that cover a wide range of topics such as data pipeline
 
 ### DVD Rental Data Transformation Pipeline using [DBT (Data Build Tool)](https://www.getdbt.com/)
 
-| **Date**           	 | **Domain**            	| **Branch**                                                                             	| **Skills** 	                        |
+| **Date**           	 | **Domain**            	| **Project URL**                                                                             	| **Skills** 	                        |
 |----------------|-----------------------	|----------------------------------------------------------------------------------------	|-------------------------------------|
 | Jan 2023 	     | Analytics Engineering 	| [dvdrental](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/dvdrental) 	| DBT, Metabase, Docker, SQL        	 |
 
@@ -33,7 +56,7 @@ user-friendly interface for data visualization.
 
 ### Telecom Customer Data Transformation Pipeline using DBT
 
-| **Date** 	| **Domain**            	| **Branch**                                                                         	| **Skills** 	|
+| **Date** 	| **Domain**            	| **Project URL**                                                                         	| **Skills** 	|
 |----------	|-----------------------	|------------------------------------------------------------------------------------	|------------	|
 | Dec 2022 	| Analytics Engineering 	| [telecom](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/telecom) 	| DBT, SQL   	|
 
@@ -42,7 +65,7 @@ For a more advance use of DBT, refer to the [DVD Rental Data Transformation Pipe
 
 ### Polygon ETL Pipeline using [MageAI](https://www.mage.ai/)
 
-| **Date** 	| **Domain**   	| **Branch**                                                                                       	| **Skills**     	|
+| **Date** 	| **Domain**   	| **Project URL**                                                                                       	| **Skills**     	|
 |----------	|--------------	|--------------------------------------------------------------------------------------------------	|----------------	|
 | Dec 2022 	| ETL Pipeline 	| [mageai-polygon](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/mageai-polygon) 	| MageAI, Python 	|
 
@@ -53,9 +76,9 @@ those interested in using MageAI for their own data pipeline projects.
 
 ### MapReduce Examples
 
-| **Date** 	| **Domain** 	| **Branch**                                                                                             	| **Skills**        	|
-|----------	|------------	|--------------------------------------------------------------------------------------------------------	|-------------------	|
-| Dec 2022 	| Big Data   	| [mapreduceexamples](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/mapreduceexamples) 	| MapReduce, Python 	|
+| **Date** 	| **Domain** 	| **Project URL**                                                                                             	 | **Skills**        	|
+|----------	|------------	|---------------------------------------------------------------------------------------------------------------|-------------------	|
+| Dec 2022 	| Big Data   	| [mapreduceexamples](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/mapreduceexamples) 	      | MapReduce, Python 	|
 
 This repository contains a collection of map-reduce code written in Python. The code is developed as a part of an Udemy course on big data processing using Hadoop and 
 Map-Reduce. The course provides an introduction to the concepts of big data and distributed computing, and covers the fundamentals of Hadoop and Map-Reduce programming.
