@@ -21,7 +21,7 @@ eat next.
 
 | **Date**           	| **Domain**       	| **Project URL**                                                         	| **Skills**                                                                       	|
 |--------------------	|------------------	|-------------------------------------------------------------------------	|----------------------------------------------------------------------------------	|
-| Feb 2023 - Present 	| Data Engineering 	| [yelposphere](https://github.com/Aditya-Gupta1/yelp-gcp-infrastructure) 	| GCP, Apache Spark, Airflow, SQL, Python, GCS, Dataproc, Cloud Composer, BigQuery 	|
+| Feb 2023 - April 2023 	| Data Engineering 	| [yelposphere](https://github.com/Aditya-Gupta1/yelp-gcp-infrastructure) 	| GCP, Apache Spark, Airflow, SQL, Python, GCS, Dataproc, Cloud Composer, BigQuery 	|
 
 ### LinkedIn Database Design
 
