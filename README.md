@@ -5,7 +5,7 @@
 
 ### YelpoSphere: Discover the Complete Picture of the Restaurant Industry
 
-<img src="yelp-banner.png" width="800" height="275" />
+![](yelp-banner.png)
 
 Do you want to know the latest trends in the restaurant industry, but don't have the time or 
 expertise to sort through Yelp data? This project takes care of the heavy lifting for you.
@@ -24,7 +24,7 @@ eat next.
 
 ### LinkedIn Database Design
 
-<img src="linkedin-dd.png" width="800" height="400" />
+![](linkedin-dd.png)
 
 Designed an OLTP database for LinkedIn considering some basic features regarding user profiles, connections, posts and comments. Read the entire blog here: https://itsadityagupta.hashnode.dev/linkedin-database-design
 
@@ -34,14 +34,14 @@ Designed an OLTP database for LinkedIn considering some basic features regarding
 
 ### Data Engineering ZoomCamp 2023
 
-<img src="dezoomcamp2023.png" width="800" height="385" />
+![](dezoomcamp2023.png)
 
 The Data Engineering Zoomcamp 2023 course is designed to provide a comprehensive understanding of data engineering techniques and practices. The course includes various 
 assignments and projects that cover a wide range of topics such as data pipeline development (ETL/ELT), data warehousing, workflow orchestration and many such things.
 
 | **Date** 	                | **Domain** 	       | **Project URL**      	| **Skills**    |
 |---------------------------|--------------------|-----------------	| ----------------- |
-| Jan 2023 - Present      	 | Data Engineering 	 |  [de-zoomcamp-2023](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023)	| Python, Docker, Terraform, Prefect, DBT, BigQuery, Postgres, GCS |
+| Jan 2023 - April 2023      	 | Data Engineering 	 |  [de-zoomcamp-2023](https://github.com/Aditya-Gupta1/data-engineering-projects/tree/de-zoomcamp-2023)	| Python, Docker, Terraform, Prefect, DBT, BigQuery, Postgres, GCS |
 
 ### DVD Rental Data Transformation Pipeline using [DBT (Data Build Tool)](https://www.getdbt.com/)
 
