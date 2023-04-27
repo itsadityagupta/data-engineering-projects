@@ -1,5 +1,7 @@
 # ETL Pipeline using Mage AI, Postgres and Polygon API
 
+![Data Pipeline Architecture](architecture.png)
+
 ### Prerequisites
 
 - A python environment
